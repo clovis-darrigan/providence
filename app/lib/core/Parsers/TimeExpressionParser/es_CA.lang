@@ -1,0 +1,109 @@
+# *** use ONLY lowercase letters in lists: input will be forced to lowercase for comparison ***
+
+# List month names; used whenever name of month needs to be displayed
+monthList = [gener, febrer, març, abril, maig, juny, juliol, agost, setembre, octubre, novembre, desembre]
+
+# *** the following list of months is for display and *SHOULD* be capitalized where appropriate
+monthListDisplay = [Gener, Febrer, Març, Abril, Maig, Juny, Juliol, Agost, Setembre, Octubre, Novembre, Desembre]
+
+# Hash table mapping acceptable month names to the display names defined in 'monthList'
+monthTable = {
+	gen = gener, gen. = gener,
+	febr = febrer, febr. = febrer,
+  mar = març, mar. = març,
+   maig = maig,
+	abr = abril, abr. = abril,
+  juny = juny,
+	jul = juliol, jul. = juliol,
+	ag = agost, ag. = agost,
+	set = setembre, set. = setembre,
+	oct = octubre, oct. = octubre,
+	nov = novembre, nov. = novembre,
+	des = desembre, des. = desembre
+}
+
+
+# List of day names, starting with Sunday
+dayListDisplay = [diumenge, dilluns, dimarts, dimecres, dijous, divendres, dissabte]
+
+rangePreConjunctions = [entre]
+rangeConjunctions = [–, -, i, ..]
+
+dateTimeConjunctions = [a les, @]
+
+dateDelimiters = [/,-,.]
+timeDelimiters = [:,.]
+
+timeAMMeridian = a. m.
+timePMMeridian = p. m.
+
+meridianTable = {
+	a.m. = a. m.,
+	p.m. = p. m.
+}
+
+dateCircaIndicator = [circa, hacia, c, c., ca, ca.]
+dateProbablyIndicator = [probablement]
+dateUncertaintyIndicator = [~]
+dateUncertaintyYearIndicator = [a,y]
+dateUncertaintyDayIndicator = [d]
+
+# What to use to indicate a geological date ("millions of years ago")
+dateMYA = [mya]
+
+# What to use to indicate radiocarbon dates ("before present")
+dateBP = [bp]
+
+dateADIndicator = ad
+dateBCIndicator = bc
+ADBCTable = {
+	a.d. = ad,
+	b.c. = bc
+}
+
+nowDate = [ara]
+todayDate = [avui]
+yesterdayDate = [ahir]
+tomorrowDate = [demà]
+undatedDate = [undated, unknown]
+
+presentDate = [present, ?, ??, ???, ????]
+beforeQualifier = [abans]
+earlyQualifier = [d'hora]
+midQualifier = [mig]
+lateQualifier = [tard]
+diedQualifier = [mort]
+afterQualifier = [després]
+bornQualifier = [nascut, va néixer]
+
+# Text to indicate century (as in "20th century")
+centuryIndicator = [segle]
+
+# Text to indicate decdae (as in "1920s")
+decadeIndicator = [s]
+
+# list of numeric suffixes, starting with the one for zero
+# (eg. 0th, 1st, 2nd, 3rd would be a list like so: [th, st, nd, rd])
+ordinalSuffixes = [è, r, n, r, t]
+ordinalSuffixDefault = è
+
+# in delimited dates (ex. 12/10/2009) is the first number a month or a day?
+# set to "0" for European style dates (day comes first); "1" for American-style dates (month comes first)
+monthComesFirstInDelimitedDate = 0
+
+# character(s) to append to day in full (not delimited) date
+# eg. in the date "1. February 2009", "." is the daySuffix
+# Note: you can put arbitrary text here - only punctuation
+daySuffix = 
+
+# Definite articles
+definiteArticles = [el, la, les, els]
+
+# Indefinite articles
+indefiniteArticles = [un, una]
+
+# Seasons
+winterSeason = [hivern]
+springSeason = [primavera]
+summerSeason = [estiu]
+autumnSeason = [tardor]
