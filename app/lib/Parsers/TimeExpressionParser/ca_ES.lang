@@ -10,7 +10,10 @@ monthListDisplay = [Gener, Febrer, Març, Abril, Maig, Juny, Juliol, Agost, Sete
 monthTable = {
 	gen = gener, gen. = gener,
 	febr = febrer, febr. = febrer,
+    mar = març, mar. = març,
+    maig = maig,
 	abr = abril, abr. = abril,
+    juny = juny,
 	jul = juliol, jul. = juliol,
 	ag = agost, ag. = agost,
 	set = setembre, set. = setembre,
@@ -64,14 +67,14 @@ yesterdayDate = [ahir]
 tomorrowDate = [demà]
 undatedDate = [undated, unknown]
 
-presentDate = [aquí, ?, ??, ???, ????]
+presentDate = [present, ?, ??, ???, ????]
 beforeQualifier = [abans]
 earlyQualifier = [d'hora]
 midQualifier = [mig]
 lateQualifier = [tard]
 diedQualifier = [mort]
 afterQualifier = [després]
-bornQualifier = [né]
+bornQualifier = [nascut, va néixer]
 
 # Text to indicate century (as in "20th century")
 centuryIndicator = [segle]
